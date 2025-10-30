@@ -6,7 +6,7 @@ plate_len = 120;
 plate_width = 33;
 
 //rib(rib_debth = 3,rib_height = 15.5);
-//rib_center_set(rib_debth=3, rib_height=5);
+rib_center_set(rib_debth=3, rib_height=5);
 rib_edge(rib_debth=3,rib_height=4);
 module rib_edge(rib_debth,rib_height){
     difference(){
