@@ -25,10 +25,10 @@ module holes(){
 
 module base(plate_debth){
     cube([plate_width,plate_len,plate_debth], center = true);
-    color("red")
+    //color("red")
     translate([0,-plate_len/2,0])
     cylinder(h=plate_debth, d=plate_width, center = true );
-    color("green")
+    //color("green")
     translate([0,plate_len/2,0])
     cylinder(h=plate_debth, d=plate_width, center = true );
 }
