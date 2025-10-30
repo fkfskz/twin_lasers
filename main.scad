@@ -26,7 +26,11 @@ color("blue")
 nut_big();
 
 plate(plate_debth_new);
-translate([0,0,-plate_debth_new/2 - rib_height_new/2])
-rib(rib_debth = 3,rib_height = rib_height_new);
+translate([plate_width/2-3/2, 0, -rib_height_new/2-plate_debth_new/2])
+rib_edge(rib_debth=3, rib_height = rib_height_new);
+rib_center(rib_debth=3, rib_height=rib_height_new);
+
+//translate([0,0,-plate_debth_new/2 - rib_height_new/2])
+//rib(rib_debth = 3,rib_height = rib_height_new);
 translate([0,0,-plate_debth_new/2 - rib_height_new/2])
 rib_center_set(rib_debth = 3,rib_height = rib_height_new);
